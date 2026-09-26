@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexander Yukhimchuk</title>
+<meta name="description" content="Alexander Yukhimchuk, PhD student at MBZUAI.">
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --muted: #666666;
+  --link: #1a0dab;
+  --rule: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { color-scheme: dark; --bg: #161616; --text: #dddddd; --muted: #999999; --link: #8ab4f8; --rule: #333333; }
+}
+:root[data-theme="dark"] { color-scheme: dark; --bg: #161616; --text: #dddddd; --muted: #999999; --link: #8ab4f8; --rule: #333333; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.6 Georgia, "Times New Roman", serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+a { color: var(--link); }
+h1 { font-size: 28px; font-weight: normal; margin: 0 0 4px; }
+h2 { font-size: 20px; font-weight: normal; margin: 36px 0 8px; border-bottom: 1px solid var(--rule); padding-bottom: 4px; }
+p { margin: 0 0 12px; }
+ul { margin: 0; padding-left: 20px; }
+li { margin-bottom: 10px; }
+.top { display: flex; gap: 24px; align-items: flex-start; }
+.photo { width: 150px; height: 150px; object-fit: cover; flex-shrink: 0; }
+.muted { color: var(--muted); }
+.date { color: var(--muted); }
+footer { margin-top: 48px; font-size: 13px; color: var(--muted); }
+@media (max-width: 520px) { .top { flex-direction: column; } }
+</style>
+</head>
+<body>
+
+<main>
+  <div class="top">
+    <img class="photo" src="assets/photo.png" alt="Alexander Yukhimchuk">
+    <div>
+      <h1>Alexander Yukhimchuk</h1>
+      <p class="muted">PhD student, MBZUAI</p>
+      <p>
+        I am a PhD student at the Mohamed bin Zayed University of Artificial Intelligence (MBZUAI),
+        working with Martin Takáč.
+        My research interests include optimization, flow matching and generative modeling.
+      </p>
+      <p>Before that, I received my BSc and MSc in Mathematics and Computer Science from the Faculty of Applied Mathematics and Informatics at Belarusian State University and studied at the Yandex School of Data Analysis.</p>
+      <p>
+        Email: yuximchuk99@gmail.com<br>
+        <a href="https://scholar.google.com/citations?user=T0aKw2AAAAAJ">Google Scholar</a>
+      </p>
+    </div>
+  </div>
+
+  <h2>Publications</h2>
+  <ul>
+    <li>
+      <a href="https://arxiv.org/abs/2606.16461">Privacy from Symmetry: Orthogonally Equivariant Transformers for LLM Inference</a><br>
+      <b>Alexander Yukhimchuk</b>, Andrey Shulga, Mladen Kolar, Martin Takáč<br>
+      <span class="muted">arXiv preprint, 2026</span>
+    </li>
+    <li>
+      <a href="https://arxiv.org/abs/2605.11838">Gradient Clipping Beyond Vector Norms: A Spectral Approach for Matrix-Valued Parameters</a><br>
+      <b>Alexander Yukhimchuk</b>, Martin Takáč, Mladen Kolar, Sayantan Choudhury<br>
+      <span class="muted">arXiv preprint, 2026</span> · <a href="https://github.com/katcinskiy/spectral-clipping">code</a>
+    </li>
+  </ul>
+
+  <h2>Education</h2>
+  <ul>
+    <li>PhD in Machine Learning, Mohamed bin Zayed University of Artificial Intelligence <span class="date">2026 – present</span></li>
+    <li>Yandex School of Data Analysis <span class="date">2022 – 2024</span></li>
+    <li>MSc in Mathematics and Computer Science, Faculty of Applied Mathematics and Informatics, Belarusian State University <span class="date">2022 – 2024</span></li>
+    <li>BSc in Mathematics and Computer Science, Faculty of Applied Mathematics and Informatics, Belarusian State University <span class="date">2017 – 2021</span></li>
+  </ul>
+
+  <footer>Last updated: September 2026</footer>
+</main>
+</body>
+</html>
